@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3e9dc;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.card {
+    position: relative;
+    height: 200px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.45);
+    clip-path: path("M 10,20 L 60,20 A 10,10 0,0,0 70,10 L 70,10 A 10,10 0,0,1 80,0 L 140,0 A 10,10 0,0,1 150,10 L 150,190 A 10,10 0,0,1 140,200 L 10,200 A 10,10 0,0,1 0,190 L 0,30 L 0,30 A 10,10 0,0,1 10,20 Z");
+    overflow: hidden;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 67px;
+    background: #5e3023;
+    clip-path:inset(0.5px round 8px 0) ;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
